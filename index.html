@@ -51,14 +51,57 @@ input,select,textarea{font-size:16px}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Premium Forsatak visual identity */
+:root{--bg:#091321;--panel:#101e31;--panel2:#17283e;--gold:#d5b574;--ivory:#fbf7ee;--muted:#b5c0ce;--line:#293a50}
+body{background:radial-gradient(ellipse at 78% 5%,#1a2b42 0,transparent 36%),var(--bg)}
+header{max-width:1320px;margin:auto;padding:18px 28px;border-bottom-color:#d5b57422}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:1.18rem}
+.brand-mark{width:48px;height:48px;flex:none;filter:drop-shadow(0 5px 12px #0005)}
+.brand-name{display:flex;flex-direction:column;line-height:1.25;color:var(--ivory)}
+.brand-name small{font-size:.7rem;letter-spacing:.14em;color:var(--gold);direction:ltr;text-align:right}
+nav a{padding:8px 0;transition:color .2s}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px;text-align:right;padding:70px 0 55px}
+.hero-copy{grid-column:1;grid-row:1;padding:10px 0}
+.hero h1{font-size:clamp(2.6rem,5.1vw,4.6rem);line-height:1.22;margin:20px 0;letter-spacing:-.045em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero>p,.hero-copy>p{font-size:1.08rem;color:var(--muted);max-width:540px;margin:0 0 24px}
+.eyebrow{display:flex;align-items:center;gap:9px;font-size:.92rem;letter-spacing:.02em}
+.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #d5b5741e}
+.hero-visual{grid-column:2;grid-row:1;position:relative;height:440px;min-width:0;border-radius:26px;overflow:hidden;border:1px solid #d5b57455;box-shadow:0 25px 65px #0005}
+.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.visual-shade{position:absolute;inset:0;background:linear-gradient(180deg,#08132105 25%,#081321a8 100%),linear-gradient(90deg,#0a15251a,#0a152500)}
+.floating-note{position:absolute;bottom:24px;right:22px;left:22px;display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #ffffff40;border-radius:16px;background:#0a1525d9;backdrop-filter:blur(12px)}
+.note-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#d5b574;color:#101827;font-size:1.3rem}
+.floating-note strong,.floating-note small{display:block}.floating-note small{color:#c3ccda;margin-top:3px}
+.visual-tag{position:absolute;top:20px;right:20px;border-radius:999px;background:#0a1525bd;border:1px solid #ffffff35;padding:7px 13px;font-size:.83rem;color:#fff}
+.hero-proof{display:flex;gap:10px 18px;flex-wrap:wrap;color:#d8cba9;font-size:.9rem;margin:24px 0 0}
+.paths{grid-column:1/-1;grid-row:2;max-width:none;gap:16px;margin-top:8px}
+.path{border-radius:17px;background:linear-gradient(130deg,#17283e,#101c2d);border-color:#35465c;padding:20px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}
+.path:hover{background:linear-gradient(130deg,#20344c,#111f32);box-shadow:0 12px 30px #0003}
+.path-icon{grid-row:1/4;display:grid;place-items:center;width:52px;height:52px;background:#d5b57418;border:1px solid #d5b57455;border-radius:15px;font-size:1.45rem}
+.path h2{margin:0 0 4px;font-size:1.18rem}.path p{font-size:.92rem}.arrow{margin-top:8px}
+.trust{border-color:#ffffff16}
+.section-head h2{letter-spacing:-.025em}.section-head h2:after{content:"";display:block;width:46px;height:3px;border-radius:4px;background:var(--gold);margin:12px auto 0}
+.panel,.feature{background:linear-gradient(145deg,#14243a,#0e1a2b);border-color:#2d3d53;box-shadow:0 12px 35px #00000012}
+.btn{background:linear-gradient(135deg,#e1c78c,#c4a15c);border-color:#e0c68b;box-shadow:0 5px 16px #d5b57420}
+@media(max-width:760px){
+ header{padding:13px 16px}.brand-mark{width:42px;height:42px}
+ .hero{grid-template-columns:1fr;gap:22px;padding:38px 0 32px}
+ .hero-copy{grid-column:1;grid-row:1}.hero-visual{grid-column:1;grid-row:2;height:300px;border-radius:20px}
+ .paths{grid-column:1;grid-row:3;margin-top:0}.hero h1{font-size:clamp(2.25rem,9vw,3.2rem);margin:14px 0}
+ .hero-copy>p{font-size:1rem}.hero-proof{font-size:.84rem;gap:8px 12px}
+}
+@media(max-width:380px){.hero-visual{height:245px}.brand-name{font-size:1rem}.brand-mark{width:38px;height:38px}}
+
 </style>
 </head>
 <body>
-<header><div class="brand">فرصتك <span>| Forsatak</span></div><nav aria-label="التنقل"><a href="#egypt">مصر</a><a href="#international">الخارج</a><a href="#cv">السيرة الذاتية</a><a href="#prepare">استعد للتقديم</a></nav></header>
+<header><a class="brand" href="#" aria-label="فرصتك الرئيسية"><svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="شعار فرصتك"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8d4a2"/><stop offset="1" stop-color="#b58c48"/></linearGradient></defs><path d="M32 3 56 17v30L32 61 8 47V17Z" fill="none" stroke="url(#g)" stroke-width="3"/><path d="M19 22h27v7H27v6h15v7H27v10h-8Z" fill="url(#g)"/><circle cx="46" cy="46" r="5" fill="#f7f3e9"/></svg><span class="brand-name">فرصتك <small>| Forsatak</small></span></a><nav aria-label="التنقل"><a href="#egypt">مصر</a><a href="#international">الخارج</a><a href="#cv">السيرة الذاتية</a><a href="#prepare">استعد للتقديم</a></nav></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">خطوتك الجاية تبدأ هنا</div><h1>فرصتك الجاية ممكن تغيّر حياتك</h1><p>اكتشف فرص العمل، افهم شروطها، واستعد للتقديم بثقة.</p><div class="paths">
-<a class="path" href="#egypt"><div>🇪🇬</div><h2>الوظائف في مصر</h2><p>استكشف فرص العمل حسب المحافظة والتخصص ونوع الوظيفة.</p><span class="arrow">استكشف فرص مصر ←</span></a>
-<a class="path" href="#international"><div>🌍</div><h2>الوظائف الدولية</h2><p>افهم الأهلية ومتطلبات اللغة والتأشيرة والترخيص قبل التقديم.</p><span class="arrow">استكشف الفرص الدولية ←</span></a>
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> خطوتك الجاية تبدأ هنا</div><h1>فرصتك الجاية<br><em>ممكن تغيّر حياتك</em></h1><p>مش مجرد إعلانات وظائف. فرصتك بتساعدك تفهم الفرصة، تعرف شروطها، وتدخل التقديم وأنت مستعد.</p><div class="hero-proof"><span>✦ فرص موثّقة</span><span>✦ شروط واضحة</span><span>✦ أدوات تساعدك</span></div></div><div class="hero-visual"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="فريق عمل يتعاون في بيئة مهنية" fetchpriority="high"><div class="visual-shade"></div><div class="floating-note"><span class="note-icon">✦</span><div><strong>خطوة أقرب لمستقبلك</strong><small>اكتشف فرصتك بثقة</small></div></div><div class="visual-tag">فرصتك تبدأ من هنا</div></div><div class="paths">
+<a class="path egypt-path" href="#egypt"><div class="path-icon">🇪🇬</div><h2>الوظائف في مصر</h2><p>استكشف فرص العمل حسب المحافظة والتخصص ونوع الوظيفة.</p><span class="arrow">استكشف فرص مصر ←</span></a>
+<a class="path world-path" href="#international"><div class="path-icon">🌍</div><h2>الوظائف الدولية</h2><p>افهم الأهلية ومتطلبات اللغة والتأشيرة والترخيص قبل التقديم.</p><span class="arrow">استكشف الفرص الدولية ←</span></a>
 </div></section>
 <div class="trust"><span>مصادر واضحة</span><span>شروط مفهومة</span><span>استعداد للتقديم</span></div>
 <section class="section" id="egypt"><div class="section-head"><h2>الوظائف في مصر</h2><p>هنعرض هنا الوظائف بعد التحقق من الإعلان الأصلي وشروط التقديم.</p></div>
