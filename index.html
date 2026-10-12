@@ -159,6 +159,25 @@ a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
  .footer-inner{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Prime polish: consistent rhythm and mobile-safe layout */
+:root{--content-width:1160px}
+.container{width:min(var(--content-width),calc(100% - 48px))}
+.site-header{border-bottom-color:#dfc48622}
+.header-inner{gap:clamp(14px,2.4vw,30px)}
+.brand{gap:12px}.brand-mark{flex:none}
+.nav{gap:clamp(10px,1.7vw,24px)}
+.hero{padding-top:clamp(42px,5.4vw,72px);padding-bottom:clamp(34px,4vw,52px);gap:clamp(30px,4vw,58px)}
+.hero-copy{max-width:590px}.hero-photo{height:clamp(340px,39vw,470px)}
+.path-grid{gap:18px;padding-bottom:38px}.path-card{min-height:124px}
+.trustbar{margin-top:2px}.section{padding-block:clamp(48px,6vw,74px)}
+.section-head{margin-bottom:34px}.tools-grid{gap:18px}
+.tool-card{min-height:210px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.tool-card:hover{transform:translateY(-3px);border-color:#dfc48688;box-shadow:0 14px 32px #0003}
+.tool-link{display:inline-flex;align-items:center;gap:7px;color:var(--gold);font-size:.9rem;font-weight:800;margin-top:16px;text-decoration:none}
+.tool-link:focus-visible,.path-card:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.empty-state{min-height:120px}.cv-panel{max-width:980px;margin-inline:auto}
+@media(max-width:850px){.container{width:min(100% - 34px,680px)}.hero{padding-top:36px;gap:24px}.hero-copy{max-width:none}.hero-photo{height:clamp(280px,58vw,390px)}.floating-card{left:10px}.path-card{min-height:110px}.section-head{margin-bottom:24px}.tool-card{min-height:0}}
+@media(max-width:560px){.container{width:calc(100% - 30px)}.header-inner{gap:10px}.hero{padding-top:27px;padding-bottom:26px}.hero-photo{height:clamp(245px,72vw,310px)}.floating-card{max-width:calc(100% - 24px);top:12px}.path-grid{gap:11px;padding-bottom:25px}.path-card{min-height:96px;padding:15px}.trustbar{justify-content:flex-start;display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:17px 4px}.trustbar span{font-size:.78rem;align-items:flex-start}.section{padding-block:42px}.section-head{margin-bottom:21px}.international-banner{border-radius:19px}.international-photo{min-height:205px}.benefit-list{gap:10px}.cv-panel{padding:15px}.footer{padding:26px 0}}
 </style>
 </head>
 <body>
@@ -191,7 +210,7 @@ a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
 <section class="section" id="international"><div class="container"><div class="section-head"><span class="section-eyebrow">خطوتك إلى العالم</span><h2>فرص دولية بشروط واضحة</h2><p>التقديم للخارج يحتاج معلومات دقيقة قبل أي خطوة. الأهلية وحق العمل ومتطلبات التأشيرة جزء أساسي من مراجعة كل إعلان.</p></div>
 <div class="international-banner"><div class="international-photo"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80" loading="lazy" alt="زملاء من خلفيات متنوعة يعملون معًا"></div><div class="international-content"><span class="section-eyebrow">قدّم وأنت فاهم</span><h3>مش كل وظيفة بالخارج مناسبة لكل متقدم.</h3><p>هدفنا نوضح لك ما يقوله الإعلان الرسمي، وما تحتاج التحقق منه قبل التقديم، من غير وعود غير مضمونة.</p><ul class="benefit-list"><li><b>✓</b><span>التحقق من قبول المتقدمين من خارج بلد الوظيفة.</span></li><li><b>✓</b><span>توضيح شروط اللغة والترخيص والاعتراف بالمؤهلات عند توفرها.</span></li><li><b>✓</b><span>روابط مباشرة للإعلان الأصلي ومصادر التأشيرات الرسمية.</span></li></ul></div></div></div></section>
 <section class="container section" id="tools"><div class="section-head"><span class="section-eyebrow">أدواتك المهنية</span><h2>كل خطوة، باستعداد أفضل</h2><p>أدوات عملية تساعدك تجهّز طلبك وتراجع تفاصيل الفرصة بنفسك.</p></div>
-<div class="tools-grid"><article class="tool-card"><div class="tool-icon">▤</div><h3>سيرة ذاتية منظمة</h3><p>أنشئ مسودة قابلة للنسخ والحفظ، من غير إرسال بياناتك إلى خادم.</p></article><article class="tool-card"><div class="tool-icon">✓</div><h3>قائمة قبل التقديم</h3><p>راجع الإعلان والمتطلبات والمستندات وأمان جهة التوظيف.</p></article><article class="tool-card"><div class="tool-icon">✧</div><h3>تدريب للمقابلة</h3><p>تمرّن على أسئلة شائعة وراجع وضوح إجاباتك وأمثلتك.</p></article></div></section>
+<div class="tools-grid"><article class="tool-card"><div class="tool-icon">▤</div><h3>سيرة ذاتية منظمة</h3><p>أنشئ مسودة قابلة للنسخ والحفظ، من غير إرسال بياناتك إلى خادم.</p><a class="tool-link" href="./cv.html">افتح أداة السيرة الذاتية ←</a></article><article class="tool-card"><div class="tool-icon">✓</div><h3>قائمة قبل التقديم</h3><p>راجع الإعلان والمتطلبات والمستندات وأمان جهة التوظيف.</p><a class="tool-link" href="#prepare">ابدأ المراجعة ←</a></article><article class="tool-card"><div class="tool-icon">✧</div><h3>تدريب للمقابلة</h3><p>تمرّن على أسئلة شائعة وراجع وضوح إجاباتك وأمثلتك.</p><a class="tool-link" href="./tools.html">افتح أدوات التدريب ←</a></article></div></section>
 <section class="container section" id="cv"><div class="section-head"><span class="section-eyebrow">خلّي خبرتك تتكلم</span><h2>ابنِ مسودة سيرتك الذاتية</h2><p>املأ المعلومات الأساسية. المسودة تُنشأ داخل المتصفح فقط ولا تُرفع إلى الموقع.</p></div>
 <div class="panel cv-panel"><div class="form-grid">
 <div class="field"><label for="fullname">الاسم بالكامل</label><input id="fullname" autocomplete="name" placeholder="اكتب اسمك"></div><div class="field"><label for="target">الوظيفة المستهدفة</label><input id="target" placeholder="مثال: محاسب مبتدئ"></div>
