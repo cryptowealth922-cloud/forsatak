@@ -1,221 +1,239 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080f1c"><meta name="color-scheme" content="dark"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cpath d=%22M32 3 56 17v30L32 61 8 47V17Z%22 fill=%22%23080f1c%22 stroke=%22%23dfc486%22 stroke-width=%223%22/%3E%3Cpath d=%22M19 22h27v7H27v6h15v7H27v10h-8Z%22 fill=%22%23dfc486%22/%3E%3C/svg%3E">
-<meta name="description" content="فرصتك — اكتشف فرص العمل، افهم شروطها، وجهّز نفسك للتقديم بثقة.">
-<title>فرصتك | Forsatak</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#081321">
+<meta name="description" content="فرصتك — اكتشف فرص العمل في مصر والخارج، افهم شروطها، وجهّز نفسك للتقديم بثقة.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 3 57 17v30L32 61 7 47V17Z' fill='%23081321' stroke='%23dfc486' stroke-width='3'/%3E%3Cpath d='M19 20h28v7H27v7h16v7H27v11h-8Z' fill='%23dfc486'/%3E%3C/svg%3E">
+<title>فرصتك | طريقك للفرصة المناسبة</title>
 <style>
-:root{--bg:#101b2d;--panel:#17263d;--panel2:#1d2e47;--gold:#c6a76a;--ivory:#f7f3e9;--muted:#bac3d0;--line:#344157;--green:#9cc7a5}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ivory);font-family:system-ui,Tahoma,Arial,sans-serif;line-height:1.8}a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1100px;margin:auto;padding-inline:22px}header{padding:18px 5%;border-bottom:1px solid #ffffff20;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{font-size:1.25rem;font-weight:850}.brand span,.eyebrow,.gold{color:var(--gold)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.92rem}nav a:hover{color:var(--gold)}.hero{text-align:center;padding:clamp(55px,9vw,100px) 0 60px}.eyebrow{font-weight:750}.hero h1{font-size:clamp(2.35rem,6vw,4.5rem);line-height:1.25;margin:14px 0;letter-spacing:-.035em}.hero>p{color:var(--muted);font-size:1.08rem;max-width:670px;margin:0 auto 30px}.paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:860px;margin:auto;text-align:right}.path,.panel,.feature{border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(145deg,#ffffff0c,#ffffff03)}.path{text-decoration:none;transition:transform .2s,border-color .2s}.path:hover{transform:translateY(-3px);border-color:var(--gold)}.path h2{margin:8px 0}.path p,.feature p{margin:0;color:var(--muted)}.arrow{display:block;color:var(--gold);font-weight:700;margin-top:13px}.trust{display:flex;justify-content:center;gap:10px 25px;flex-wrap:wrap;padding:22px 10px;border-block:1px solid #ffffff20;color:#ded4bd}.trust span:before{content:'•';color:var(--gold);padding-left:8px}.section{padding:52px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 26px}.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.feature strong{color:var(--gold);display:block;margin-bottom:5px}.toolbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:.92rem;color:#e3dccd}.field input,.field select,.field textarea{width:100%;background:#0c1524;border:1px solid var(--line);border-radius:10px;padding:11px 12px;color:var(--ivory);min-width:0}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:1px}.btn{border:1px solid var(--gold);border-radius:10px;padding:10px 17px;background:var(--gold);color:#111827;font-weight:800}.btn.secondary{background:transparent;color:var(--ivory);border-color:var(--line)}.btn:hover{filter:brightness(1.06)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.notice{border:1px solid #7e6b44;background:#c6a76a12;border-radius:12px;padding:14px 16px;color:#e9dfca}.empty{padding:24px;text-align:center;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.checklist{display:grid;gap:10px;margin:15px 0}.check{display:flex;align-items:flex-start;gap:10px;color:#e6e1d6}.check input{margin-top:8px;accent-color:var(--gold)}.result{white-space:pre-wrap;background:#0b1422;border:1px solid var(--line);border-radius:12px;padding:16px;min-height:80px;color:#e9e5db;overflow-wrap:anywhere}.small{font-size:.87rem;color:var(--muted)}footer{border-top:1px solid #ffffff20;text-align:center;padding:25px;color:var(--muted);font-size:.9rem}.hidden{display:none!important}
-/* Mobile usability and accessibility refinements */
-html{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{min-width:320px;overflow-wrap:break-word}
-a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
-button,.btn{min-height:44px}
-input,select,textarea{font-size:16px}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-@media(max-width:700px){
-  header{padding:14px 16px;align-items:flex-start;gap:10px}
-  .brand{font-size:1.15rem;white-space:nowrap}
-  nav{width:100%;gap:8px 14px;justify-content:flex-start}
-  nav a{display:inline-flex;align-items:center;min-height:40px;padding:3px 0}
-  .wrap{padding-inline:16px}
-  .hero{padding:42px 0 36px}
-  .hero h1{font-size:clamp(2rem,9vw,3rem);letter-spacing:-.02em}
-  .hero>p{font-size:1rem}
-  .paths,.features,.tool-grid{grid-template-columns:minmax(0,1fr)}
-  .path,.panel,.feature{padding:18px;border-radius:14px}
-  .trust{gap:5px 14px;font-size:.92rem;padding:16px 4px}
-  .section{padding:34px 0}
-  .section-head{margin-bottom:20px}
-  .toolbar{grid-template-columns:minmax(0,1fr);gap:12px;margin:18px 0}
-  .field{min-width:0}
-  .field input,.field select,.field textarea{min-height:46px;padding:11px 12px}
-  .field textarea{min-height:100px}
-  .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
-  .actions .btn{width:100%}
-  .empty{padding:18px 14px}
-  .result{font-size:.95rem;overflow-wrap:anywhere}
-  footer{padding:22px 16px}
-}
-@media(max-width:380px){
-  .wrap{padding-inline:12px}
-  header{padding-inline:12px}
-  nav{gap:6px 10px}
-  nav a{font-size:.88rem}
-  .hero h1{font-size:1.9rem}
-  .path,.panel,.feature{padding:15px}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-}
-
-/* Premium Forsatak visual identity */
-:root{--bg:#091321;--panel:#101e31;--panel2:#17283e;--gold:#d5b574;--ivory:#fbf7ee;--muted:#b5c0ce;--line:#293a50}
-body{background:radial-gradient(ellipse at 78% 5%,#1a2b42 0,transparent 36%),var(--bg)}
-header{max-width:1320px;margin:auto;padding:18px 28px;border-bottom-color:#d5b57422}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:1.18rem}
-.brand-mark{width:48px;height:48px;flex:none;filter:drop-shadow(0 5px 12px #0005)}
-.brand-name{display:flex;flex-direction:column;line-height:1.25;color:var(--ivory)}
-.brand-name small{font-size:.7rem;letter-spacing:.14em;color:var(--gold);direction:ltr;text-align:right}
-nav a{padding:8px 0;transition:color .2s}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px;text-align:right;padding:70px 0 55px}
-.hero-copy{grid-column:1;grid-row:1;padding:10px 0}
-.hero h1{font-size:clamp(2.6rem,5.1vw,4.6rem);line-height:1.22;margin:20px 0;letter-spacing:-.045em}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero>p,.hero-copy>p{font-size:1.08rem;color:var(--muted);max-width:540px;margin:0 0 24px}
-.eyebrow{display:flex;align-items:center;gap:9px;font-size:.92rem;letter-spacing:.02em}
-.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #d5b5741e}
-.hero-visual{grid-column:2;grid-row:1;position:relative;height:440px;min-width:0;border-radius:26px;overflow:hidden;border:1px solid #d5b57455;box-shadow:0 25px 65px #0005}
-.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
-.visual-shade{position:absolute;inset:0;background:linear-gradient(180deg,#08132105 25%,#081321a8 100%),linear-gradient(90deg,#0a15251a,#0a152500)}
-.floating-note{position:absolute;bottom:24px;right:22px;left:22px;display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #ffffff40;border-radius:16px;background:#0a1525d9;backdrop-filter:blur(12px)}
-.note-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#d5b574;color:#101827;font-size:1.3rem}
-.floating-note strong,.floating-note small{display:block}.floating-note small{color:#c3ccda;margin-top:3px}
-.visual-tag{position:absolute;top:20px;right:20px;border-radius:999px;background:#0a1525bd;border:1px solid #ffffff35;padding:7px 13px;font-size:.83rem;color:#fff}
-.hero-proof{display:flex;gap:10px 18px;flex-wrap:wrap;color:#d8cba9;font-size:.9rem;margin:24px 0 0}
-.paths{grid-column:1/-1;grid-row:2;max-width:none;gap:16px;margin-top:8px}
-.path{border-radius:17px;background:linear-gradient(130deg,#17283e,#101c2d);border-color:#35465c;padding:20px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}
-.path:hover{background:linear-gradient(130deg,#20344c,#111f32);box-shadow:0 12px 30px #0003}
-.path-icon{grid-row:1/4;display:grid;place-items:center;width:52px;height:52px;background:#d5b57418;border:1px solid #d5b57455;border-radius:15px;font-size:1.45rem}
-.path h2{margin:0 0 4px;font-size:1.18rem}.path p{font-size:.92rem}.arrow{margin-top:8px}
-.trust{border-color:#ffffff16}
-.section-head h2{letter-spacing:-.025em}.section-head h2:after{content:"";display:block;width:46px;height:3px;border-radius:4px;background:var(--gold);margin:12px auto 0}
-.panel,.feature{background:linear-gradient(145deg,#14243a,#0e1a2b);border-color:#2d3d53;box-shadow:0 12px 35px #00000012}
-.btn{background:linear-gradient(135deg,#e1c78c,#c4a15c);border-color:#e0c68b;box-shadow:0 5px 16px #d5b57420}
-@media(max-width:760px){
- header{padding:13px 16px}.brand-mark{width:42px;height:42px}
- .hero{grid-template-columns:1fr;gap:22px;padding:38px 0 32px}
- .hero-copy{grid-column:1;grid-row:1}.hero-visual{grid-column:1;grid-row:2;height:300px;border-radius:20px}
- .paths{grid-column:1;grid-row:3;margin-top:0}.hero h1{font-size:clamp(2.25rem,9vw,3.2rem);margin:14px 0}
- .hero-copy>p{font-size:1rem}.hero-proof{font-size:.84rem;gap:8px 12px}
-}
-@media(max-width:380px){.hero-visual{height:245px}.brand-name{font-size:1rem}.brand-mark{width:38px;height:38px}}
-
-
-/* Art-directed premium pass: stronger editorial layout, depth and visual rhythm */
-:root{--bg:#080f1c;--panel:#101c2d;--gold:#dfc486;--muted:#b7c3d1;--line:#2b3a50}
-body{background-color:var(--bg);background-image:radial-gradient(ellipse at 10% 18%,#1a2b43 0,transparent 33%),radial-gradient(ellipse at 92% 48%,#17243a 0,transparent 28%);background-attachment:fixed}
-header{position:relative;z-index:5;max-width:1400px;padding:16px clamp(16px,4vw,56px);border-bottom:1px solid #dfc48625}
-.brand-mark{width:54px;height:54px}
-nav{align-items:center;gap:clamp(12px,2vw,26px)}
-nav a{font-size:.9rem;color:#c3ccda}
-nav a:last-child{border:1px solid #dfc48670;border-radius:999px;padding:7px 15px;color:var(--gold)}
-.hero{max-width:1160px;margin:auto;min-height:0;padding:clamp(44px,7vw,82px) 22px 48px;gap:clamp(22px,4vw,54px)}
+:root{color-scheme:dark;--bg:#081321;--bg2:#0c1a2b;--surface:#102137;--surface2:#142941;--gold:#dfc486;--gold2:#b89552;--text:#f8f5ed;--muted:#aebdcd;--line:#2a4057;--green:#8dc7a1;--radius:22px;--shadow:0 24px 70px #0004}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;min-width:320px;background:radial-gradient(ellipse at 88% 0%,#1a3047 0,transparent 34%),radial-gradient(ellipse at 0% 48%,#112239 0,transparent 30%),var(--bg);color:var(--text);font-family:Tahoma,Arial,system-ui,sans-serif;line-height:1.85;overflow-wrap:anywhere}
+a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}img{max-width:100%;display:block}
+.container{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.skip{position:absolute;top:-100px;right:16px;background:var(--gold);color:#081321;padding:10px 15px;z-index:99}.skip:focus{top:10px}
+.site-header{position:sticky;top:0;z-index:20;background:#081321eF;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.brand-mark{width:48px;height:48px;filter:drop-shadow(0 6px 12px #0004)}
+.brand-copy{display:flex;flex-direction:column;line-height:1.3}
+.brand-ar{font-size:1.12rem;font-weight:900;letter-spacing:-.04em}
+.brand-en{font-size:.67rem;color:var(--gold);letter-spacing:.18em;direction:ltr;text-align:right}
+.nav{display:flex;align-items:center;gap:clamp(12px,2vw,28px)}
+.nav a{text-decoration:none;color:#c3ceda;font-size:.9rem;transition:color .2s;white-space:nowrap}
+.nav a:hover,.nav a:focus-visible{color:var(--gold)}
+.nav .nav-cta{padding:9px 15px;border:1px solid #dfc48670;border-radius:999px;color:var(--gold)}
+.menu-toggle{display:none;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;width:44px;height:44px;font-size:1.2rem}
+.hero{padding:66px 0 48px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:54px}
 .hero-copy{position:relative}
-.hero-copy:before{content:"";position:absolute;right:-24px;top:12px;width:3px;height:105px;background:linear-gradient(var(--gold),transparent);border-radius:5px;opacity:.75}
-.hero h1{font-weight:850;line-height:1.3}
-.hero h1 em{background:linear-gradient(90deg,#f1dfb4,#c6a15d);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-visual{height:clamp(300px,38vw,470px);border-radius:30px;box-shadow:0 30px 90px #0007,0 0 0 7px #ffffff03}
-.hero-visual img{transform:scale(1.02);transition:transform .8s ease}
-.hero-visual:hover img{transform:scale(1.06)}
-.hero-visual:after{content:"";position:absolute;inset:12px;border:1px solid #ffffff45;border-radius:21px;pointer-events:none}
-.visual-tag{letter-spacing:.02em}
-.floating-note{box-shadow:0 12px 36px #0005}
-.hero-proof span{display:inline-flex;align-items:center;gap:7px}
-.hero-proof span:before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold)}
-.paths{gap:18px}
-.path{position:relative;overflow:hidden;min-height:146px;padding:22px 24px;border-radius:20px;background:linear-gradient(125deg,#182a41f2,#101a2af2);box-shadow:inset 0 1px #ffffff0a,0 14px 30px #0002}
-.path:after{content:"";position:absolute;left:-25px;bottom:-54px;width:130px;height:130px;border:1px solid #dfc48620;border-radius:50%;box-shadow:0 0 0 15px #dfc48608,0 0 0 30px #dfc48605;pointer-events:none}
-.path-icon{width:58px;height:58px;font-size:1.6rem;box-shadow:inset 0 0 22px #dfc4860c}
-.path h2{font-size:1.25rem}
-.trust{max-width:1120px;margin:0 auto;padding:23px 16px;border-block-color:#ffffff13;gap:12px clamp(20px,5vw,65px)}
-.trust span{font-size:.95rem}
-.section{padding:clamp(44px,6vw,72px) 0}
-.section-head{margin-bottom:32px}
-.section-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
-.section-head p{max-width:650px;margin:12px auto 0;line-height:1.9}
-.section-head h2:after{margin-top:15px;width:54px;height:3px}
-.features{gap:18px}
-.feature{position:relative;min-height:175px;padding:26px 23px;border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#14253b,#0d1828);box-shadow:0 20px 40px #0002}
-.feature:before{content:"";display:block;width:42px;height:4px;background:var(--gold);border-radius:5px;margin-bottom:20px;opacity:.9}
-.feature strong{font-size:1.08rem;margin-bottom:9px}
-.panel{padding:clamp(18px,3vw,30px);border-radius:22px}
-.toolbar{gap:14px}
-.field label{font-weight:650}
-.field input,.field select,.field textarea{background:#080f1c;border-color:#34455d;border-radius:12px;transition:border-color .2s,box-shadow .2s}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px #dfc48616}
-.btn{border-radius:12px;padding:11px 19px;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-1px);box-shadow:0 7px 22px #dfc48624}
-.btn.secondary{background:#ffffff04;border-color:#3a4a60}
-.empty{background:linear-gradient(135deg,#111f32,#0c1727);border-color:#3d4b60;padding:34px 20px}
-.notice{background:linear-gradient(120deg,#dfc48612,#dfc48605)}
-footer{background:#060c15;border-top-color:#dfc48625;padding:30px 16px}
-@media(max-width:760px){
- header{align-items:center}
- nav a:last-child{padding:5px 10px}
- .hero{padding-inline:16px}
- .hero-copy:before{right:-10px;height:78px}
- .hero-visual{border-radius:21px}
- .hero-visual:after{inset:8px;border-radius:15px}
- .path{min-height:130px}
- .features{gap:12px}
- .feature{min-height:0}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:.88rem;font-weight:800;letter-spacing:.02em}
+.kicker:before{content:"";width:25px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.28;letter-spacing:-.055em;margin:20px 0 17px;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-copy>p{font-size:1.06rem;color:var(--muted);max-width:530px;margin:0}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:27px}
+.btn{min-height:48px;display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:11px 19px;border:1px solid var(--gold);border-radius:13px;background:linear-gradient(135deg,#ead7a5,#c9a763);color:#111a26;font-weight:850;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px #dfc48625}
+.btn.secondary{background:#ffffff04;color:var(--text);border-color:#3b5067}
+.btn.secondary:hover{border-color:var(--gold)}
+.proof-points{display:flex;gap:10px 19px;flex-wrap:wrap;margin-top:24px;color:#d1d9e1;font-size:.84rem}
+.proof-points span{display:inline-flex;align-items:center;gap:7px}
+.proof-points i{font-style:normal;color:var(--gold)}
+.hero-art{position:relative;min-width:0}
+.hero-photo{height:465px;border-radius:28px;overflow:hidden;position:relative;border:1px solid #dfc48655;box-shadow:var(--shadow)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.82);transition:transform .7s}
+.hero-photo:hover img{transform:scale(1.035)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#08132100 35%,#081321d9 100%),linear-gradient(90deg,#08132144,#08132100)}
+.photo-caption{position:absolute;z-index:2;bottom:23px;right:24px;left:24px}
+.photo-caption small{display:block;color:var(--gold);font-weight:800;margin-bottom:5px}
+.photo-caption strong{font-size:1.45rem;line-height:1.5}
+.floating-card{position:absolute;z-index:3;top:28px;left:-22px;display:flex;align-items:center;gap:12px;padding:14px 17px;border-radius:16px;background:#0a1727eF;border:1px solid #ffffff26;box-shadow:0 15px 40px #0005;backdrop-filter:blur(15px)}
+.floating-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#dfc4861b;color:var(--gold);font-size:1.25rem}
+.floating-card strong,.floating-card small{display:block}.floating-card strong{font-size:.91rem}.floating-card small{font-size:.78rem;color:var(--muted)}
+.visual-stamp{position:absolute;z-index:3;right:-16px;bottom:74px;border:1px solid #dfc4867a;border-radius:50%;width:91px;height:91px;display:grid;place-items:center;text-align:center;background:#0b1928;color:var(--gold);font-size:.75rem;font-weight:800;line-height:1.5;transform:rotate(-9deg)}
+.path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:4px 0 34px}
+.path-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;padding:23px 24px;text-decoration:none;border:1px solid var(--line);border-radius:20px;background:linear-gradient(120deg,#14283e,#0d1b2c);transition:transform .2s,border-color .2s,background .2s}
+.path-card:hover{transform:translateY(-3px);border-color:#cdb474;background:linear-gradient(120deg,#1a3049,#101f32)}
+.path-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:16px;background:#dfc48616;border:1px solid #dfc48648;font-size:1.5rem}
+.path-card h2{font-size:1.16rem;margin:0 0 3px}.path-card p{font-size:.88rem;color:var(--muted);margin:0}
+.path-arrow{font-size:1.5rem;color:var(--gold)}
+.trustbar{display:flex;justify-content:center;align-items:center;gap:12px clamp(18px,5vw,62px);flex-wrap:wrap;padding:21px 12px;border-block:1px solid #ffffff14;color:#d7deE5}
+.trustbar span{display:flex;align-items:center;gap:9px;font-size:.91rem}.trustbar b{color:var(--gold);font-size:1.05rem}
+.section{padding:68px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 30px}
+.section-eyebrow{font-size:.8rem;color:var(--gold);font-weight:850;letter-spacing:.08em}
+.section-head h2{font-size:clamp(1.75rem,3.4vw,2.55rem);line-height:1.4;margin:6px 0 8px;letter-spacing:-.035em}
+.section-head p{margin:0 auto;color:var(--muted);max-width:630px}
+.section-head h2:after{content:"";display:block;width:46px;height:3px;border-radius:3px;background:var(--gold);margin:13px auto 0}
+.panel{background:linear-gradient(145deg,#13253a,#0d1a2a);border:1px solid #2c4158;border-radius:var(--radius);padding:clamp(18px,3vw,30px);box-shadow:0 18px 45px #0002}
+.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field label{font-size:.9rem;font-weight:750;color:#e3e8ed}
+.field input,.field select,.field textarea{width:100%;min-width:0;min-height:47px;border:1px solid #354a61;border-radius:12px;padding:11px 13px;background:#081321;color:var(--text);font-size:16px}
+.field textarea{resize:vertical;min-height:100px}
+.field input::placeholder,.field textarea::placeholder{color:#8293a6}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold)}
+.empty-state{display:flex;align-items:center;gap:17px;padding:24px;border-radius:16px;border:1px dashed #475a70;background:#091625}
+.empty-symbol{flex:none;width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:#dfc48616;color:var(--gold);font-size:1.35rem}
+.empty-state strong{display:block;margin-bottom:4px}.empty-state p{margin:0;color:var(--muted);font-size:.92rem}
+.international-banner{display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;border:1px solid #34465b;border-radius:25px;background:#0d1a2a}
+.international-photo{position:relative;min-height:330px}
+.international-photo img{position:absolute;width:100%;height:100%;object-fit:cover;filter:saturate(.75)}
+.international-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#081321a8,transparent 75%),linear-gradient(90deg,#0d1a2a00,#0d1a2a66)}
+.international-content{padding:clamp(24px,4vw,43px);align-self:center}
+.international-content h3{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.45;margin:8px 0 12px}
+.international-content>p{color:var(--muted);margin:0 0 20px}
+.benefit-list{display:grid;gap:12px;margin:20px 0 0;padding:0;list-style:none}
+.benefit-list li{display:flex;gap:11px;align-items:flex-start;color:#dce3ea;font-size:.92rem}
+.benefit-list b{color:var(--gold);font-weight:900}
+.tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tool-card{padding:23px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#13243a,#0d1929)}
+.tool-icon{width:47px;height:47px;display:grid;place-items:center;border-radius:14px;background:#dfc48616;color:var(--gold);font-size:1.25rem;margin-bottom:17px}
+.tool-card h3{font-size:1.05rem;margin:0 0 7px}.tool-card p{font-size:.9rem;color:var(--muted);margin:0}
+.cv-panel{margin-top:24px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.full{grid-column:1/-1}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:19px}
+.small{font-size:.84rem;color:var(--muted)}
+.result{white-space:pre-wrap;background:#07111e;border:1px solid #30445b;border-radius:13px;padding:17px;min-height:70px;color:#e9e5db;overflow-wrap:anywhere;margin-top:16px}
+.check-interview{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel h3{margin:0 0 8px;font-size:1.15rem}
+.checklist{display:grid;gap:13px;margin:18px 0 0}
+.check{display:flex;align-items:flex-start;gap:10px;color:#dce3ea;font-size:.92rem}
+.check input{margin-top:7px;accent-color:var(--gold);width:17px;height:17px;flex:none}
+.interview-fields{display:grid;gap:13px}
+.notice{padding:14px 16px;border-radius:13px;border:1px solid #8a7449;background:#dfc48612;color:#e8ddc6;margin-top:13px}
+.footer{border-top:1px solid #ffffff14;background:#060d17;padding:32px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.footer-brand{display:flex;align-items:center;gap:11px}.footer-brand .brand-mark{width:39px;height:39px}
+.footer-note{font-size:.84rem;color:var(--muted);max-width:550px}
+@media(max-width:850px){
+ .container{width:min(100% - 34px,680px)}
+ .header-inner{height:auto;min-height:74px;flex-wrap:wrap;padding-block:12px}
+ .menu-toggle{display:block;margin-right:auto}
+ .nav{display:none;order:3;width:100%;padding:12px 0 5px;border-top:1px solid #ffffff12;flex-wrap:wrap;gap:8px 18px}
+ .nav.open{display:flex}
+ .nav a{padding:6px 0}
+ .hero{grid-template-columns:1fr;gap:28px;padding-top:40px}
+ .hero-copy{order:1}.hero-art{order:2}
+ .hero h1{font-size:clamp(2.4rem,8vw,3.7rem)}
+ .hero-photo{height:clamp(280px,60vw,420px)}
+ .floating-card{left:12px;top:15px}.visual-stamp{right:10px;bottom:65px}
+ .path-grid{padding-top:0}
+ .international-banner{grid-template-columns:1fr}
+ .international-photo{min-height:250px}
+ .tools-grid{grid-template-columns:1fr}
 }
-@media(prefers-reduced-motion:reduce){.hero-visual img{transition:none}}
-
+@media(max-width:560px){
+ .container{width:calc(100% - 30px)}
+ .brand-mark{width:42px;height:42px}.brand-ar{font-size:1.04rem}
+ .hero{padding-top:30px;padding-bottom:30px}
+ .hero h1{font-size:clamp(2.15rem,10vw,3rem);margin:15px 0}
+ .hero-copy>p{font-size:.98rem}
+ .hero-actions{display:grid;grid-template-columns:1fr}
+ .hero-actions .btn{width:100%}
+ .proof-points{gap:8px 13px;font-size:.78rem}
+ .hero-photo{height:290px;border-radius:21px}
+ .floating-card{padding:10px 12px}.floating-icon{width:36px;height:36px}
+ .photo-caption{right:17px;left:17px;bottom:17px}.photo-caption strong{font-size:1.18rem}
+ .visual-stamp{width:72px;height:72px;font-size:.65rem;bottom:57px}
+ .path-grid{grid-template-columns:1fr;gap:12px}
+ .path-card{padding:17px;grid-template-columns:auto 1fr auto;gap:12px}
+ .path-icon{width:48px;height:48px}
+ .path-card h2{font-size:1.05rem}.path-card p{font-size:.82rem}
+ .trustbar{gap:10px 18px;padding:17px 0}.trustbar span{font-size:.81rem}
+ .section{padding:46px 0}
+ .section-head{margin-bottom:22px}
+ .panel{padding:17px;border-radius:17px}
+ .filters,.form-grid,.check-interview{grid-template-columns:1fr}
+ .full{grid-column:auto}
+ .empty-state{align-items:flex-start;padding:17px}
+ .empty-symbol{width:40px;height:40px}
+ .international-photo{min-height:215px}
+ .international-content{padding:22px}
+ .actions{display:grid;grid-template-columns:1fr}
+ .actions .btn{width:100%}
+ .footer-inner{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-<header><a class="brand" href="#" aria-label="فرصتك الرئيسية"><svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="شعار فرصتك"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8d4a2"/><stop offset="1" stop-color="#b58c48"/></linearGradient></defs><path d="M32 3 56 17v30L32 61 8 47V17Z" fill="none" stroke="url(#g)" stroke-width="3"/><path d="M19 22h27v7H27v6h15v7H27v10h-8Z" fill="url(#g)"/><circle cx="46" cy="46" r="5" fill="#f7f3e9"/></svg><span class="brand-name">فرصتك <small>| Forsatak</small></span></a><nav aria-label="التنقل"><a href="#egypt">مصر</a><a href="#international">الخارج</a><a href="#cv">السيرة الذاتية</a><a href="#prepare">استعد للتقديم</a></nav></header>
-<main class="wrap">
-<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> خطوتك الجاية تبدأ هنا</div><h1>فرصتك الجاية<br><em>ممكن تغيّر حياتك</em></h1><p>مش مجرد إعلانات وظائف. فرصتك بتساعدك تفهم الفرصة، تعرف شروطها، وتدخل التقديم وأنت مستعد.</p><div class="hero-proof"><span>✦ فرص موثّقة</span><span>✦ شروط واضحة</span><span>✦ أدوات تساعدك</span></div></div><div class="hero-visual"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="فريق عمل يتعاون في بيئة مهنية" fetchpriority="high"><div class="visual-shade"></div><div class="floating-note"><span class="note-icon">✦</span><div><strong>خطوة أقرب لمستقبلك</strong><small>اكتشف فرصتك بثقة</small></div></div><div class="visual-tag">فرصتك تبدأ من هنا</div></div><div class="paths">
-<a class="path egypt-path" href="#egypt"><div class="path-icon">🇪🇬</div><h2>الوظائف في مصر</h2><p>استكشف فرص العمل حسب المحافظة والتخصص ونوع الوظيفة.</p><span class="arrow">استكشف فرص مصر ←</span></a>
-<a class="path world-path" href="#international"><div class="path-icon">🌍</div><h2>الوظائف الدولية</h2><p>افهم الأهلية ومتطلبات اللغة والتأشيرة والترخيص قبل التقديم.</p><span class="arrow">استكشف الفرص الدولية ←</span></a>
-</div></section>
-<div class="trust"><span>مصادر واضحة</span><span>شروط مفهومة</span><span>استعداد للتقديم</span></div>
-<section class="section" id="egypt"><div class="section-head"><h2>الوظائف في مصر</h2><p>هنعرض هنا الوظائف بعد التحقق من الإعلان الأصلي وشروط التقديم.</p></div>
-<div class="toolbar"><div class="field"><label for="governorate">المحافظة</label><select id="governorate"><option value="">كل المحافظات</option><option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option><option>الإسماعيلية</option><option>بورسعيد</option><option>السويس</option><option>الشرقية</option><option>الدقهلية</option><option>القليوبية</option><option>الغربية</option><option>المنوفية</option><option>كفر الشيخ</option><option>البحيرة</option><option>دمياط</option><option>الفيوم</option><option>بني سويف</option><option>المنيا</option><option>أسيوط</option><option>سوهاج</option><option>قنا</option><option>الأقصر</option><option>أسوان</option><option>البحر الأحمر</option><option>الوادي الجديد</option><option>مطروح</option><option>شمال سيناء</option><option>جنوب سيناء</option></select></div>
-<div class="field"><label for="category">التخصص</label><select id="category"><option value="">كل التخصصات</option><option>تكنولوجيا وبرمجة</option><option>طب وصحة</option><option>هندسة</option><option>محاسبة ومالية</option><option>مبيعات وتسويق</option><option>تعليم</option><option>إدارة وموارد بشرية</option><option>خدمة عملاء</option><option>حرف وصيانة</option><option>فنادق وسياحة</option><option>تصميم</option><option>صناعة وطاقة</option><option>قانون</option><option>زراعة</option></select></div>
-<div class="field"><label for="jobtype">نوع العمل</label><select id="jobtype"><option value="">كل الأنواع</option><option>دوام كامل</option><option>دوام جزئي</option><option>عن بُعد</option><option>تدريب مدفوع</option><option>موسمي</option><option>عمل حر</option></select></div></div>
-<div class="empty"><strong>قائمة الوظائف قيد التجهيز</strong><br>لن نعرض وظائف تجريبية على أنها حقيقية. ستظهر الوظائف هنا بعد التحقق من الإعلان الأصلي ورابط التقديم المباشر وتاريخ التحقق.</div>
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="#" aria-label="فرصتك الرئيسية">
+<svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="شعار فرصتك"><path d="M32 3 57 17v30L32 61 7 47V17Z" fill="#0b1929" stroke="#dfc486" stroke-width="2.5"/><path d="M18 19h29v7H26v7h17v7H26v12h-8Z" fill="#dfc486"/><circle cx="46" cy="46" r="4" fill="#f8f5ed"/></svg>
+<span class="brand-copy"><span class="brand-ar">فرصتك</span><span class="brand-en">F O R S A T A K</span></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="فتح قائمة التنقل" aria-expanded="false">☰</button>
+<nav class="nav" id="siteNav" aria-label="التنقل الرئيسي"><a href="#egypt">وظائف مصر</a><a href="#international">وظائف الخارج</a><a href="#tools">أدواتك المهنية</a><a href="#cv">السيرة الذاتية</a><a class="nav-cta" href="#egypt">ابدأ استكشاف الفرص ←</a></nav>
+</div></header>
+<main id="main">
+<section class="container hero">
+<div class="hero-copy"><div class="kicker">فرصتك الجديدة تبدأ بخطوة</div><h1>مش مجرد وظيفة…<br><em>دي خطوتك الجاية.</em></h1><p>اكتشف فرص العمل في مصر والخارج، افهم شروطها الحقيقية، وجهّز نفسك للتقديم بأدوات عملية ومعلومات واضحة.</p>
+<div class="hero-actions"><a class="btn" href="#egypt">استكشف وظائف مصر <span aria-hidden="true">←</span></a><a class="btn secondary" href="#international">اكتشف الفرص الدولية <span aria-hidden="true">↗</span></a></div>
+<div class="proof-points"><span><i>✦</i> شروط تقديم واضحة</span><span><i>✦</i> روابط للإعلان الأصلي</span><span><i>✦</i> أدوات مجانية للاستعداد</span></div></div>
+<div class="hero-art"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=85" alt="فريق مهني يتعاون حول طاولة في بيئة عمل حديثة" fetchpriority="high"><div class="photo-caption"><small>خطوتك. مهاراتك. مستقبلك.</small><strong>الفرصة المناسبة تبدأ<br>بمعلومة موثوقة.</strong></div></div>
+<div class="floating-card"><span class="floating-icon">✦</span><span><strong>استعد بثقة</strong><small>من اكتشاف الفرصة إلى التقديم</small></span></div><div class="visual-stamp">اكتشف<br>افهم<br>قدّم</div></div>
 </section>
-<section class="section" id="international"><div class="section-head"><h2>الوظائف الدولية</h2><p>الأهلية أولًا: لن تُنشر أي وظيفة دولية إلا بعد التحقق من قبول المتقدمين من خارج بلد الوظيفة.</p></div><div class="features">
-<article class="feature"><strong>تحقّق من الأهلية</strong><p>شروط الجنسية والإقامة وحق العمل، حسب ما يذكره الإعلان الرسمي.</p></article><article class="feature"><strong>افهم المتطلبات</strong><p>اللغة والتراخيص والاعتراف بالمؤهلات والتأشيرة والانتقال.</p></article><article class="feature"><strong>رابط مباشر فقط</strong><p>الرابط لازم يفتح إعلان الوظيفة نفسه، مش صفحة بحث أو الصفحة الرئيسية للشركة.</p></article>
+<section class="container path-grid" aria-label="اختر وجهتك"><a class="path-card" href="#egypt"><span class="path-icon">🇪🇬</span><span><h2>الوظائف في مصر</h2><p>فلتر حسب المحافظة والتخصص ونوع العمل.</p></span><span class="path-arrow" aria-hidden="true">←</span></a>
+<a class="path-card" href="#international"><span class="path-icon">🌍</span><span><h2>الوظائف الدولية</h2><p>افهم الأهلية والتأشيرة ومتطلبات الانتقال.</p></span><span class="path-arrow" aria-hidden="true">←</span></a></section>
+<div class="container trustbar"><span><b>✦</b> مصادر أصلية</span><span><b>✓</b> شروط مفهومة</span><span><b>↗</b> استعداد عملي</span><span><b>◇</b> بياناتك تظل على جهازك في أدوات السيرة</span></div>
+<section class="container section" id="egypt"><div class="section-head"><span class="section-eyebrow">فرص قريبة منك</span><h2>ابدأ بحثك عن وظيفة في مصر</h2><p>اختار المحافظة والتخصص ونوع العمل. لن نعرض إعلانًا تجريبيًا على أنه وظيفة حقيقية؛ كل فرصة منشورة يجب أن يكون لها رابط مباشر للإعلان الأصلي.</p></div>
+<div class="panel"><div class="filters">
+<div class="field"><label for="governorate">المحافظة</label><select id="governorate"><option value="">كل المحافظات</option><option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option><option>الإسماعيلية</option><option>بورسعيد</option><option>السويس</option><option>الشرقية</option><option>الدقهلية</option><option>القليوبية</option><option>الغربية</option><option>المنوفية</option><option>كفر الشيخ</option><option>البحيرة</option><option>دمياط</option><option>الفيوم</option><option>بني سويف</option><option>المنيا</option><option>أسيوط</option><option>سوهاج</option><option>قنا</option><option>الأقصر</option><option>أسوان</option><option>البحر الأحمر</option><option>الوادي الجديد</option><option>مطروح</option><option>شمال سيناء</option><option>جنوب سيناء</option></select></div>
+<div class="field"><label for="category">المجال المهني</label><select id="category"><option value="">كل المجالات</option><option>تكنولوجيا وبرمجة</option><option>طب وصحة</option><option>هندسة</option><option>محاسبة ومالية</option><option>مبيعات وتسويق</option><option>تعليم</option><option>إدارة وموارد بشرية</option><option>خدمة عملاء</option><option>حرف وصيانة</option><option>فنادق وسياحة</option><option>تصميم</option><option>صناعة وطاقة</option><option>قانون</option><option>زراعة</option><option>مشتريات</option><option>بحث علمي</option></select></div>
+<div class="field"><label for="jobtype">نوع العمل</label><select id="jobtype"><option value="">كل أنواع العمل</option><option>دوام كامل</option><option>دوام جزئي</option><option>عن بُعد</option><option>تدريب مدفوع</option><option>موسمي</option><option>عمل حر</option></select></div></div>
+<div class="empty-state"><span class="empty-symbol">⌕</span><div><strong>قائمة الوظائف قيد التجهيز والتحقق</strong><p>لن نضع روابط عامة أو وظائف وهمية. ستظهر الإعلانات هنا بعد التأكد من أن الرابط يفتح صفحة الوظيفة نفسها وأن الإعلان ما زال متاحًا.</p></div></div>
 </div></section>
-<section class="section" id="cv"><div class="section-head"><h2>جهّز سيرتك الذاتية</h2><p>اكتب بياناتك لتوليد مسودة عربية بسيطة داخل الصفحة. البيانات لا تُرسل إلى خادم.</p></div>
-<div class="panel"><div class="toolbar">
-<div class="field"><label for="fullname">الاسم</label><input id="fullname" autocomplete="name" placeholder="الاسم بالكامل"></div>
-<div class="field"><label for="target">الوظيفة المستهدفة</label><input id="target" placeholder="مثال: محاسب مبتدئ"></div>
-<div class="field"><label for="contact">وسيلة التواصل</label><input id="contact" placeholder="بريد إلكتروني أو هاتف"></div>
-<div class="field"><label for="city">المحافظة / المدينة</label><input id="city" placeholder="مثال: الإسماعيلية"></div>
-<div class="field"><label for="education">التعليم</label><input id="education" placeholder="المؤهل وسنة التخرج"></div>
-<div class="field"><label for="skills">المهارات</label><input id="skills" placeholder="افصل بين المهارات بفواصل"></div>
-<div class="field" style="grid-column:1/-1"><label for="experience">الخبرة أو المشاريع</label><textarea id="experience" rows="3" placeholder="اكتب خبراتك أو تدريبك أو مشاريعك"></textarea></div>
-<div class="field" style="grid-column:1/-1"><label for="summary">نبذة مهنية</label><textarea id="summary" rows="3" placeholder="عرّف بنفسك وبأهم ما تقدمه"></textarea></div>
-</div><div class="actions"><button class="btn" id="makecv">إنشاء مسودة السيرة</button><button class="btn secondary" id="copycv">نسخ المسودة</button><button class="btn secondary" id="downloadcv">حفظ السيرة كملف نصي</button><button class="btn secondary" id="clearcv">مسح البيانات</button></div><p class="small">نصيحة: لا تضف رقم بطاقة أو بيانات مالية أو معلومات شديدة الحساسية إلى السيرة.</p><div id="cvresult" class="result hidden" aria-live="polite"></div></div>
+<section class="section" id="international"><div class="container"><div class="section-head"><span class="section-eyebrow">خطوتك إلى العالم</span><h2>فرص دولية بشروط واضحة</h2><p>التقديم للخارج يحتاج معلومات دقيقة قبل أي خطوة. الأهلية وحق العمل ومتطلبات التأشيرة جزء أساسي من مراجعة كل إعلان.</p></div>
+<div class="international-banner"><div class="international-photo"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80" loading="lazy" alt="زملاء من خلفيات متنوعة يعملون معًا"></div><div class="international-content"><span class="section-eyebrow">قدّم وأنت فاهم</span><h3>مش كل وظيفة بالخارج مناسبة لكل متقدم.</h3><p>هدفنا نوضح لك ما يقوله الإعلان الرسمي، وما تحتاج التحقق منه قبل التقديم، من غير وعود غير مضمونة.</p><ul class="benefit-list"><li><b>✓</b><span>التحقق من قبول المتقدمين من خارج بلد الوظيفة.</span></li><li><b>✓</b><span>توضيح شروط اللغة والترخيص والاعتراف بالمؤهلات عند توفرها.</span></li><li><b>✓</b><span>روابط مباشرة للإعلان الأصلي ومصادر التأشيرات الرسمية.</span></li></ul></div></div></div></section>
+<section class="container section" id="tools"><div class="section-head"><span class="section-eyebrow">أدواتك المهنية</span><h2>كل خطوة، باستعداد أفضل</h2><p>أدوات عملية تساعدك تجهّز طلبك وتراجع تفاصيل الفرصة بنفسك.</p></div>
+<div class="tools-grid"><article class="tool-card"><div class="tool-icon">▤</div><h3>سيرة ذاتية منظمة</h3><p>أنشئ مسودة قابلة للنسخ والحفظ، من غير إرسال بياناتك إلى خادم.</p></article><article class="tool-card"><div class="tool-icon">✓</div><h3>قائمة قبل التقديم</h3><p>راجع الإعلان والمتطلبات والمستندات وأمان جهة التوظيف.</p></article><article class="tool-card"><div class="tool-icon">✧</div><h3>تدريب للمقابلة</h3><p>تمرّن على أسئلة شائعة وراجع وضوح إجاباتك وأمثلتك.</p></article></div></section>
+<section class="container section" id="cv"><div class="section-head"><span class="section-eyebrow">خلّي خبرتك تتكلم</span><h2>ابنِ مسودة سيرتك الذاتية</h2><p>املأ المعلومات الأساسية. المسودة تُنشأ داخل المتصفح فقط ولا تُرفع إلى الموقع.</p></div>
+<div class="panel cv-panel"><div class="form-grid">
+<div class="field"><label for="fullname">الاسم بالكامل</label><input id="fullname" autocomplete="name" placeholder="اكتب اسمك"></div><div class="field"><label for="target">الوظيفة المستهدفة</label><input id="target" placeholder="مثال: محاسب مبتدئ"></div>
+<div class="field"><label for="contact">وسيلة التواصل</label><input id="contact" autocomplete="email" placeholder="بريد إلكتروني أو هاتف"></div><div class="field"><label for="city">المحافظة / المدينة</label><input id="city" placeholder="مثال: الإسماعيلية"></div>
+<div class="field"><label for="education">التعليم</label><input id="education" placeholder="المؤهل وسنة التخرج"></div><div class="field"><label for="skills">المهارات</label><input id="skills" placeholder="افصل بين المهارات بفواصل"></div>
+<div class="field full"><label for="experience">الخبرة أو المشاريع</label><textarea id="experience" rows="3" placeholder="خبراتك، تدريبك، أو مشاريعك"></textarea></div><div class="field full"><label for="summary">نبذة مهنية</label><textarea id="summary" rows="3" placeholder="ما الذي يميزك وما الذي تقدمه؟"></textarea></div></div>
+<div class="actions"><button class="btn" id="makecv">إنشاء مسودة السيرة</button><button class="btn secondary" id="copycv">نسخ المسودة</button><button class="btn secondary" id="downloadcv">حفظ كملف نصي</button><button class="btn secondary" id="clearcv">مسح البيانات</button></div><p class="small">نصيحة خصوصية: تجنّب إضافة رقم بطاقة الهوية أو بيانات مالية أو معلومات شديدة الحساسية.</p><div id="cvresult" class="result" hidden aria-live="polite"></div></div>
 </section>
-<section class="section" id="prepare"><div class="section-head"><h2>استعد للتقديم</h2><p>راجع القائمة قبل إرسال طلبك.</p></div><div class="tool-grid"><div class="panel"><h3>قائمة مراجعة</h3><div class="checklist"><label class="check"><input type="checkbox"> قرأت الإعلان الأصلي وتأكدت أنه ما زال متاحًا.</label><label class="check"><input type="checkbox"> راجعت المؤهلات والخبرة المطلوبة.</label><label class="check"><input type="checkbox"> تأكدت من الموقع والراتب وشروط العمل.</label><label class="check"><input type="checkbox"> جهزت السيرة والمستندات المطلوبة.</label><label class="check"><input type="checkbox"> تحققت من أهلية التقديم والتأشيرة عند الحاجة.</label><label class="check"><input type="checkbox"> لن أدفع رسوم توظيف غير موثوقة أو أرسل بيانات حساسة بلا تحقق.</label></div></div>
-<div class="panel"><h3>تدرّب على المقابلة</h3><p>اكتب إجابتك لسؤال شائع ثم راجع هل هي واضحة ومحددة.</p><div class="field"><label for="interviewq">السؤال</label><select id="interviewq"><option>احكِ لنا عن نفسك.</option><option>لماذا تريد هذه الوظيفة؟</option><option>ما نقطة قوة لديك مع مثال؟</option><option>احكِ عن تحدٍّ وكيف تعاملت معه.</option></select></div><div class="field" style="margin-top:12px"><label for="answer">إجابتك</label><textarea id="answer" rows="4" placeholder="اكتب إجابتك هنا..."></textarea></div><button class="btn secondary" style="margin-top:12px" id="reviewanswer">اعرض تذكيرًا للمراجعة</button><div id="answerresult" class="notice hidden" aria-live="polite" style="margin-top:12px"></div></div></div></section>
-</main><footer>فرصتك | Forsatak — اكتشف، افهم، استعد وقدّم.<br><span class="small">هذه نسخة أولية؛ الوظائف والمعلومات المتعلقة بالتأشيرات تحتاج تحققًا من مصادرها الأصلية قبل النشر.</span></footer>
+<section class="container section" id="prepare"><div class="section-head"><span class="section-eyebrow">قبل ما تضغط تقديم</span><h2>استعد وراجع التفاصيل</h2><p>خطوات بسيطة تساعدك على تقديم طلب أوضح وأكثر أمانًا.</p></div>
+<div class="check-interview"><div class="panel"><h3>قائمة مراجعة الطلب</h3><p class="small">علّم على الخطوات التي انتهيت منها.</p><div class="checklist"><label class="check"><input type="checkbox"> قرأت الإعلان الأصلي وتأكدت أنه ما زال متاحًا.</label><label class="check"><input type="checkbox"> راجعت المؤهلات والخبرة المطلوبة.</label><label class="check"><input type="checkbox"> تحققت من جهة التوظيف وموقع العمل والراتب.</label><label class="check"><input type="checkbox"> جهّزت السيرة والمستندات المطلوبة.</label><label class="check"><input type="checkbox"> تحققت من أهلية التقديم والتأشيرة عند الحاجة.</label><label class="check"><input type="checkbox"> لم أدفع رسومًا مشبوهة أو أرسل بيانات حساسة بلا تحقق.</label></div></div>
+<div class="panel"><h3>تدرّب على المقابلة</h3><p class="small">اكتب إجابتك ثم راجعها وفق التذكير.</p><div class="interview-fields"><div class="field"><label for="interviewq">السؤال</label><select id="interviewq"><option>احكِ لنا عن نفسك.</option><option>لماذا تريد هذه الوظيفة؟</option><option>ما نقطة قوة لديك مع مثال؟</option><option>احكِ عن تحدٍّ وكيف تعاملت معه.</option></select></div><div class="field"><label for="answer">إجابتك</label><textarea id="answer" rows="4" placeholder="اكتب إجابتك هنا..."></textarea></div><button class="btn secondary" id="reviewanswer">راجع إجابتي</button><div id="answerresult" class="notice" hidden aria-live="polite"></div></div></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3 57 17v30L32 61 7 47V17Z" fill="#0b1929" stroke="#dfc486" stroke-width="2.5"/><path d="M18 19h29v7H26v7h17v7H26v12h-8Z" fill="#dfc486"/></svg><span class="brand-copy"><span class="brand-ar">فرصتك</span><span class="brand-en">F O R S A T A K</span></span></div><div class="footer-note">فرصتك — اكتشف، افهم، استعد وقدّم.<br>الموقع لا يضمن التوظيف؛ راجع دائمًا الإعلان الأصلي وشروطه قبل مشاركة بياناتك أو التقديم.</div></div></footer>
 <script>
 (function(){
 const $=id=>document.getElementById(id);
+const nav=$('siteNav'),toggle=$('menuToggle');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'إغلاق قائمة التنقل':'فتح قائمة التنقل');toggle.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
 let cvText='';
 $('makecv').addEventListener('click',()=>{
-const name=$('fullname').value.trim(), target=$('target').value.trim();
-if(!name||!target){$('cvresult').classList.remove('hidden');$('cvresult').textContent='اكتب الاسم والوظيفة المستهدفة أولًا.';return}
-const parts=[name,target,'', $('contact').value.trim(),$('city').value.trim(),'','نبذة مهنية',$('summary').value.trim(),'','التعليم',$('education').value.trim(),'','المهارات',$('skills').value.split(/[،,]/).map(s=>s.trim()).filter(Boolean).map(s=>'• '+s).join('\n'),'','الخبرة والمشاريع',$('experience').value.trim()];
-cvText=parts.filter((v,i)=>v!==''||i===2).join('\n');
-$('cvresult').textContent=cvText;$('cvresult').classList.remove('hidden');
+const name=$('fullname').value.trim(),target=$('target').value.trim();
+if(!name||!target){$('cvresult').hidden=false;$('cvresult').textContent='اكتب الاسم والوظيفة المستهدفة أولًا.';return}
+const skills=$('skills').value.split(/[،,]/).map(s=>s.trim()).filter(Boolean).map(s=>'• '+s).join('\n');
+cvText=[name,target,'', $('contact').value.trim(),$('city').value.trim(),'','نبذة مهنية',$('summary').value.trim(),'','التعليم',$('education').value.trim(),'','المهارات',skills,'','الخبرة والمشاريع',$('experience').value.trim()].join('\n').replace(/\n{3,}/g,'\n\n');
+$('cvresult').textContent=cvText;$('cvresult').hidden=false;
 });
 $('copycv').addEventListener('click',async()=>{
-if(!cvText){$('cvresult').classList.remove('hidden');$('cvresult').textContent='أنشئ المسودة أولًا ثم اضغط نسخ.';return}
-try{await navigator.clipboard.writeText(cvText);$('copycv').textContent='تم النسخ ✓';setTimeout(()=>$('copycv').textContent='نسخ المسودة',1800)}catch(e){$('cvresult').classList.remove('hidden');$('cvresult').textContent=cvText+'\n\nحدد النص وانسخه يدويًا.'}
+if(!cvText){$('cvresult').hidden=false;$('cvresult').textContent='أنشئ المسودة أولًا ثم اضغط نسخ.';return}
+try{await navigator.clipboard.writeText(cvText);$('copycv').textContent='تم النسخ ✓';setTimeout(()=>$('copycv').textContent='نسخ المسودة',1800)}catch(e){$('cvresult').hidden=false;$('cvresult').textContent=cvText+'\n\nحدد النص وانسخه يدويًا.'}
 });
 $('downloadcv').addEventListener('click',()=>{
-if(!cvText){$('cvresult').classList.remove('hidden');$('cvresult').textContent='أنشئ المسودة أولًا ثم احفظها.';return}
-const blob=new Blob(['\\ufeff',cvText],{type:'text/plain;charset=utf-8'});
-const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='Forsatak-CV.txt';document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);
+if(!cvText){$('cvresult').hidden=false;$('cvresult').textContent='أنشئ المسودة أولًا ثم احفظها.';return}
+const blob=new Blob(['\ufeff',cvText],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='Forsatak-CV.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
-$('clearcv').addEventListener('click',()=>{['fullname','target','contact','city','education','skills','experience','summary'].forEach(id=>$(id).value='');cvText='';$('cvresult').textContent='';$('cvresult').classList.add('hidden');$('copycv').textContent='نسخ المسودة'});
+$('clearcv').addEventListener('click',()=>{['fullname','target','contact','city','education','skills','experience','summary'].forEach(id=>$(id).value='');cvText='';$('cvresult').textContent='';$('cvresult').hidden=true;$('copycv').textContent='نسخ المسودة'});
 $('reviewanswer').addEventListener('click',()=>{
-const answer=$('answer').value.trim();$('answerresult').classList.remove('hidden');
+const answer=$('answer').value.trim();$('answerresult').hidden=false;
 if(!answer){$('answerresult').textContent='اكتب إجابتك أولًا، ثم راجعها.';return}
 $('answerresult').textContent='راجع إجابتك: هل بدأت بالفكرة الأساسية؟ هل ذكرت مثالًا حقيقيًا؟ هل ربطت مهاراتك بالوظيفة؟ هل الإجابة مختصرة وواضحة؟ تجنّب إضافة معلومات غير دقيقة.';
 });
 })();
 </script>
-</body></html>
+</body>
+</html>
