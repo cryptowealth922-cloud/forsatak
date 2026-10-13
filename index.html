@@ -195,35 +195,6 @@ a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}
 </div></header>
 <main id="main"><section class="container hero landing-hero"><div class="hero-copy"><div class="kicker">منصة فرص العمل الموثوقة</div><h1>فرصتك تبدأ<br><em>بخطوة أوضح.</em></h1><p>فرصتك منصة تعريفية تساعدك على الوصول إلى فرص العمل داخل مصر وخارجها، مع التركيز على شروط التقديم والروابط الأصلية للإعلانات. اختار المسار المناسب لك وابدأ البحث من مكان واحد.</p><div class="hero-actions landing-actions"><a class="btn" href="./egypt.html">وظائف مصر <span aria-hidden="true">←</span></a><a class="btn secondary" href="./international.html">وظائف دولية <span aria-hidden="true">←</span></a></div><div class="proof-points"><span><i>✓</i> معلومات واضحة</span><span><i>✓</i> روابط مباشرة للإعلانات</span><span><i>✓</i> لا نعرض وظائف وهمية</span></div></div><div class="hero-art"><div class="hero-photo"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=85" alt="فريق مهني يتعاون في بيئة عمل حديثة" fetchpriority="high"><div class="photo-caption"><small>فرصتك | FORSATAK</small><strong>اكتشف الفرصة المناسبة<br>واستعد للخطوة التالية.</strong></div></div></div></section></main>
 <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><svg class="brand-mark" viewBox="0 0 80 80" role="img" aria-label="شعار فرصتك"><defs><linearGradient id="goldMark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5e5b7"/><stop offset=".52" stop-color="#dfc486"/><stop offset="1" stop-color="#9e7839"/></linearGradient></defs><path d="M40 3 70 20v40L40 77 10 60V20Z" fill="#0b1929" stroke="url(#goldMark)" stroke-width="2.5"/><path d="M24 22h34v8H33v7h19v8H33v14h-9Z" fill="url(#goldMark)"/><path d="M53 49 61 57 53 65" fill="none" stroke="#f8f5ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17 40 4 64 17" fill="none" stroke="#f8f5ed" stroke-opacity=".55" stroke-width="1"/></svg><span class="brand-copy"><span class="brand-ar">فرصتك</span><span class="brand-en">F O R S A T A K</span></span></div><div class="footer-note">فرصتك — فرص عمل أوضح، وخطوة مهنية أكثر استعدادًا. تحقّق من الإعلان الأصلي قبل التقديم.</div></div></footer>
-<script>
-(function(){
-const $=id=>document.getElementById(id);
-const nav=$('siteNav'),toggle=$('menuToggle');
-toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'إغلاق قائمة التنقل':'فتح قائمة التنقل');toggle.textContent=open?'×':'☰'});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
-let cvText='';
-$('makecv').addEventListener('click',()=>{
-const name=$('fullname').value.trim(),target=$('target').value.trim();
-if(!name||!target){$('cvresult').hidden=false;$('cvresult').textContent='اكتب الاسم والوظيفة المستهدفة أولًا.';return}
-const skills=$('skills').value.split(/[،,]/).map(s=>s.trim()).filter(Boolean).map(s=>'• '+s).join('\n');
-cvText=[name,target,'', $('contact').value.trim(),$('city').value.trim(),'','نبذة مهنية',$('summary').value.trim(),'','التعليم',$('education').value.trim(),'','المهارات',skills,'','الخبرة والمشاريع',$('experience').value.trim()].join('\n').replace(/\n{3,}/g,'\n\n');
-$('cvresult').textContent=cvText;$('cvresult').hidden=false;
-});
-$('copycv').addEventListener('click',async()=>{
-if(!cvText){$('cvresult').hidden=false;$('cvresult').textContent='أنشئ المسودة أولًا ثم اضغط نسخ.';return}
-try{await navigator.clipboard.writeText(cvText);$('copycv').textContent='تم النسخ ✓';setTimeout(()=>$('copycv').textContent='نسخ المسودة',1800)}catch(e){$('cvresult').hidden=false;$('cvresult').textContent=cvText+'\n\nحدد النص وانسخه يدويًا.'}
-});
-$('downloadcv').addEventListener('click',()=>{
-if(!cvText){$('cvresult').hidden=false;$('cvresult').textContent='أنشئ المسودة أولًا ثم احفظها.';return}
-const blob=new Blob(['\ufeff',cvText],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='Forsatak-CV.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
-});
-$('clearcv').addEventListener('click',()=>{['fullname','target','contact','city','education','skills','experience','summary'].forEach(id=>$(id).value='');cvText='';$('cvresult').textContent='';$('cvresult').hidden=true;$('copycv').textContent='نسخ المسودة'});
-$('reviewanswer').addEventListener('click',()=>{
-const answer=$('answer').value.trim();$('answerresult').hidden=false;
-if(!answer){$('answerresult').textContent='اكتب إجابتك أولًا، ثم راجعها.';return}
-$('answerresult').textContent='راجع إجابتك: هل بدأت بالفكرة الأساسية؟ هل ذكرت مثالًا حقيقيًا؟ هل ربطت مهاراتك بالوظيفة؟ هل الإجابة مختصرة وواضحة؟ تجنّب إضافة معلومات غير دقيقة.';
-});
-})();
-</script>
+
 </body>
 </html>
